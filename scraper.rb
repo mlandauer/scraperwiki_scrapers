@@ -6,7 +6,8 @@ url = "https://classic.scraperwiki.com/browse/scrapers/"
 agent = Mechanize.new
 
 last_page = false
-page_number = 0
+#page_number = 0
+page_number = 175
 
 until last_page
   puts "Scraping page #{page_number}..."
