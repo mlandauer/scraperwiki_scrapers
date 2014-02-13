@@ -18,7 +18,7 @@ page.search(".code_object_line").each do |scraper|
   record["language"] = scraper.at(".language .link a").inner_html
   record["status"] = scraper.at(".status .link").inner_html
   notes = scraper.at(".notes .link a")
-  record["notes"] = notes.inner_text if notes
+  record["notes"] = notes.inner_html if notes
   p record
   ScraperWiki.save_sqlite(['scraper_name'], record)
 end
