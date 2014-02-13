@@ -7,7 +7,7 @@ agent = Mechanize.new
 
 last_page = false
 #page_number = 0
-page_number = 175
+page_number = 231
 
 until last_page
   puts "Scraping page #{page_number}..."
