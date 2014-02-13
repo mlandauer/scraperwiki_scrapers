@@ -20,5 +20,5 @@ page.search(".code_object_line").each do |scraper|
   notes = scraper.at(".notes .link a")
   record["notes"] = notes.inner_html if notes
   p record
-  ScraperWiki.save_sqlite(['scraper_name'], record)
+  ScraperWiki.save_sqlite(['profile_name', 'scraper_name'], record)
 end
